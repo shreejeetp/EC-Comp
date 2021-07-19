@@ -1,0 +1,2 @@
+use eccomp_db;
+create table item(id int NOT NULL auto_increment,type_id int,name varchar(255),description varchar(1000),img_url varchar(255),price int,date_added datetime,primary key(id),FOREIGN KEY(type_id) REFERENCES itemType(id));
