@@ -1,0 +1,25 @@
+.login-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 100vh;
+}
+
+.login-form{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.login-field{
+    margin-bottom: 25px;
+}
+
+.login-img{
+    width: 10vh;
+}

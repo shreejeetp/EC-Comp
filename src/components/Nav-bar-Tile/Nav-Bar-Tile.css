@@ -1,0 +1,32 @@
+.Nav-Bar-Tile{
+    width: 100%;
+    height: 50px;
+    background-color:#009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-tile{
+    background-color: #00695f;
+}
+
+.Nav-Bar-Tile-Text{
+    font-size: 15px;
+    visibility: collapse;
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.v-nav-bar:hover > .Nav-Bar-Tile > .Nav-Bar-Tile-Text{
+    visibility: visible;
+    opacity: 1;
+}
+
+.Nav-Bar-Tile-Img{
+    width: 25px;
+    height: 25px;
+}
+.Nav-Bar-Tile:hover{
+    background-color: #33ab9f;
+}

@@ -1,0 +1,6 @@
+.Shopping-tiles{
+    display: flex;
+    margin: 10vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
