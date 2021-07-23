@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import VerticalNavBar from './components/Vertical-nav-bar/Vertical-nav-bar';
 import Login from './pages/Login/Login';
-import { useState } from 'react';
+import ItemCatalog from './pages/ItemCatalog/ItemCatalog';
 
 function App() {
   
@@ -18,6 +18,8 @@ function App() {
         <Switch>
           <Route exact path="/"><Homepage/></Route>
           <Route exact path="/login"><Login/></Route>
+          <Route path="/items/"><ItemCatalog/></Route>
+          
         </Switch>
       </Router>
     </div>

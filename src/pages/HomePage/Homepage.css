@@ -4,3 +4,18 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+.center-content-screen{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-cross-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
