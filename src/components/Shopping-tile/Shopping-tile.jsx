@@ -13,7 +13,7 @@ function ShoppingTile(props) {
                 <div className="shopping-tile-img" style={{ "backgroundImage": `url(${props.itemType.img_url})` }}>
                     <div className="shopping-tile-content">
                         <h2 className="shopping-tile-text">{props.itemType.name}</h2>
-                        <button onClick={()=>{props.history.push(`/items/${props.itemType.id}`)}}>Shop Now</button>
+                        <button onClick={()=>{props.history.push({pathname:`/items/${props.itemType.id}`,state:{itemType:props.itemType}})}}>Shop Now</button>
                     </div>
                 </div>
             </div>

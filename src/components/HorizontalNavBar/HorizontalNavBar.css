@@ -1,0 +1,21 @@
+.horizontal-nav-bar{
+    display:flex;
+    justify-content: flex-start;
+    background-color: #00695f;
+    height: 50px;
+    align-items: center;
+}
+
+.first-nav-bar{
+    margin-left: 100px;
+    color:white;
+}
+
+.nav-bar-icn{
+    height: 30px;
+}
+
+.nav-bar-comp{
+    margin-left:20px;
+    color:white;
+}

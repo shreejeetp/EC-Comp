@@ -1,0 +1,20 @@
+.cart-page-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cart-page{
+    background-color: white;
+    margin: 100px;
+    padding:20px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-page-title{
+    align-items: flex-start;
+}

@@ -9,6 +9,7 @@
     align-items: flex-start;
     background-color: #009688;
     transition: 1s all ease;
+    z-index: 1;
 }
 
 .v-nav-bar:hover{

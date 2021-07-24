@@ -1,0 +1,22 @@
+.shopping-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.shopping-item-img{
+    display: table-column;
+    height: 100px;
+}
+.shoppoing-item-content{
+    align-self: flex-start;
+    flex-grow: 2;
+}
+
+.shopping-item-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 100px;
+}

@@ -1,6 +1,7 @@
 import { React, Component } from "react"
 import ShoppingTile from "../../components/Shopping-tile/Shopping-tile";
 import "./Homepage.css"
+import LoadingPage from "../Loading/Loading"
 
 async function fetchItemType() {
     const response = await fetch("http://localhost:8080/api/ItemType/all/")
@@ -34,9 +35,7 @@ class Homepage extends Component {
     render() {
         if (this.state.itemType.loading === true) {
             return (
-                <div className="center-content-screen">
-                    <h1>Loading Api Content...</h1>
-                </div>
+                <LoadingPage/>
             )
         }
         const itemTypes=this.state.itemType.value
