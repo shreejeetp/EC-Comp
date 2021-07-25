@@ -12,7 +12,7 @@ function ShoppingItem(props) {
             </div>
             <div className="shopping-item-price">
                 <p className>{`₹${props.item.price}/-`}</p>
-                <button>Add to Cart!</button>
+                <button onClick={()=>props.global.func.addToCart(props.item.id,props.item.name,props.item.price)}>Add to Cart!</button>
             </div>
         </div>
     )

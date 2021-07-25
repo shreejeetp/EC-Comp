@@ -40,7 +40,7 @@ class ItemCatalog extends Component {
         return (
             <div className="ItemCatalogDiv">
                 <HorizontalNavBar itemType={this.state.itemType} />
-                <ShoppingItemList items={this.state.items}/>
+                <ShoppingItemList items={this.state.items} global={this.props.global}/>
             </div>
         )
     }

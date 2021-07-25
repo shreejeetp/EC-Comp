@@ -13,8 +13,24 @@
     padding:20px 50px 20px 50px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .cart-page-title{
     align-items: flex-start;
+}
+
+.cart-item-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    margin:25px;
+}
+.cart-item-field{
+    margin:25px;
 }
