@@ -8,7 +8,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class EcItemRequest {
+public class AddItemRequest {
 	private long itemTypeId;
 	
 	private String name;
@@ -18,7 +18,6 @@ public class EcItemRequest {
 	private String img_url;
 	
 	private int price;
-	
 	public EcItem getItem() {
 		return new EcItem(this);		
 	}

@@ -16,4 +16,8 @@ public class ItemTypeService {
 	public List<EcItemType> getAll() {
 		return repo.findAll();
 	}
+	
+	public void createItemType(EcItemType itemType) {
+		repo.save(itemType);
+	}
 }

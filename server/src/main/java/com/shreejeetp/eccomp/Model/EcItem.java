@@ -44,12 +44,19 @@ public class EcItem {
 	@Column(name="date_added")
 	private Timestamp date_added;
 	
-	public EcItem(EcItemRequest itemRequest) {
+	public EcItem(AddItemRequest itemRequest) {
 		this.date_added=new Timestamp(System.currentTimeMillis());
 		this.name=itemRequest.getName();
-		this.description=itemRequest.getName();
+		this.description=itemRequest.getDescription();
 		this.img_url=itemRequest.getImg_url();
 		this.price=itemRequest.getPrice();
-		System.out.println("====================In EcTime Constructor======================");
+	}
+	
+
+	public void copyUpdate(UpdateItemRequest itemRequest) {
+		this.name=itemRequest.getName();
+		this.price=itemRequest.getPrice();
+		this.description=itemRequest.getDescription();
+		this.img_url=itemRequest.getImg_url();
 	}
 }
